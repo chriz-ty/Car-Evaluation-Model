@@ -41,9 +41,3 @@ predicted = model.predict(x_test)  #uses the trained KNN model (model) to make p
 names = ["unacc", "acc", "good", "vgood"]
 for i in range(len(predicted)):
     print("Predicted: ", names[predicted[i]], "Data: ",x_test[i], "Actual: ",names[y_test[i]] )
-
-    """
-    n= model.kneighbors([x_test[i]],9,True)    #computes the indices of the 9 nearest neighbors of the current test instance
-    print("N: ",n)
-    
-    """
